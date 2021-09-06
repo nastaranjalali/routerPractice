@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+    border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #002b40;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+    width: 50vw;
+    height: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+    margin: 40px;
+    width: 80%;
+    height: 80px;
+
+    font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    margin: 30px;
+    padding: 40px;
+    background-color: whitesmoke;
+    color: #002b40;
+    border-radius: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 80%;
+}
+
+.profile {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(220deg, #f26418, #e5b37d, #ffab6b, #b19f8f, #9f9c65);
+    background-size: 300% 300%;
+    animation: gradient-animation 5s ease infinite;
+}
+
+.login {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(220deg, #c3f218, #7d9ee5, #c5ff6b, #b1ae8f, #9f9c65);
+    background-size: 300% 300%;
+    animation: gradient-animation 5s ease infinite;
+}
+
+.home {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(220deg, #39f218, #89bfc6, #6bff7a, #8fb19f, #9f9c65);
+    background-size: 300% 300%;
+    animation: gradient-animation 5s ease infinite;
+
+
+}
+
+.contactUs {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(220deg, #a618f2, #899cc6, #c66bff, #a18fb1, #9f9c65);
+    background-size: 300% 300%;
+    animation: gradient-animation 5s ease infinite;
+
+
+}
+
+.wrapper {
+    animation: enter-animation 5s ease;
+
+}
+
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0 50%;
+
+    }
+    50% {
+        background-position: 100% 50%;
+
+
+    }
+    100% {
+        background-position: 0 50%;
+
+    }
+}
+
+@keyframes enter-animation {
+    0% {
+        opacity: 0;
+        position: relative;
+        left: -100%;
+    }
+
+    100% {
+        opacity: 100%;
+        position: relative;
+        left: 0;
+    }
 }
